@@ -1,0 +1,149 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f5f7fa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+  width: 90%;
+  max-width: 480px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 26px;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+.instructions {
+  font-size: 15px;
+  color: #777;
+  margin-bottom: 20px;
+}
+
+#difficulty {
+  padding: 6px 12px;
+  font-size: 14px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  margin-right: 8px;
+}
+
+#reset-btn {
+  padding: 7px 14px;
+  font-size: 14px;
+  background-color: #f03e3e;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#reset-btn:hover {
+  background-color: #c92a2a;
+}
+
+.game-board {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 20px;
+  margin-bottom: 25px;
+  min-height: 160px;
+}
+
+.emoji-row {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.emoji-box {
+  width: 42px;
+  height: 42px;
+  font-size: 26px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1.5px solid #ccc;
+  border-radius: 8px;
+  background-color: #fff;
+}
+
+.correct {
+  background-color: #d3f9d8;
+  border-color: #69db7c;
+}
+
+.partial {
+  background-color: #fff3bf;
+  border-color: #fab005;
+}
+
+.wrong {
+  background-color: #f1f3f5;
+  border-color: #adb5bd;
+}
+
+.current-guess {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 15px;
+  min-height: 48px;
+}
+
+.current-guess .emoji-box {
+  background-color: #f8f9fa;
+}
+
+.emoji-picker {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 18px;
+}
+
+.emoji-picker button {
+  font-size: 22px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.15s ease;
+}
+
+.emoji-picker button:hover {
+  transform: scale(1.2);
+}
+
+#submit-btn {
+  padding: 10px 24px;
+  background-color: #339af0;
+  color: #fff;
+  font-size: 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+#submit-btn:hover {
+  background-color: #1c7ed6;
+}
+
+.message {
+  margin-top: 16px;
+  font-weight: 500;
+  color: #495057;
+}
